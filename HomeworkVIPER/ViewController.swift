@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let searchAssembly = SearchAssembly.assembly()
+        navigationController?.present(searchAssembly, animated: true, completion: nil)
     }
 
 
