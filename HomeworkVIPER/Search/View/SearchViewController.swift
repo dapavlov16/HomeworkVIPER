@@ -15,7 +15,7 @@ protocol SearchViewInput: AnyObject {
 protocol SearchViewOutput {
     func viewDidLoad()
     func searchMovies(searchText text: String)
-    func showMovieDetails(movie: SearchEntity, from view: UIViewController)
+    func showMovieDetails(movie: SearchEntity)
 }
 
 final class SearchViewController: UIViewController {

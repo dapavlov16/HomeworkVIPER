@@ -19,6 +19,7 @@
 		53E262E524C4CDAC008DAB35 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E262E424C4CDAC008DAB35 /* SearchPresenter.swift */; };
 		53E262E724C4CDBE008DAB35 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E262E624C4CDBE008DAB35 /* SearchViewController.swift */; };
 		53E262EA24C4CE47008DAB35 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E262E924C4CE47008DAB35 /* NetworkService.swift */; };
+		53E262F324C4E1C5008DAB35 /* SearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E262F224C4E1C5008DAB35 /* SearchAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		53E262E424C4CDAC008DAB35 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		53E262E624C4CDBE008DAB35 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		53E262E924C4CE47008DAB35 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		53E262F224C4E1C5008DAB35 /* SearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		53E262D824C4CCC2008DAB35 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				53E262F124C4E1AF008DAB35 /* Assembly */,
 				53E262DD24C4CD4C008DAB35 /* Entity */,
 				53E262DC24C4CD46008DAB35 /* Router */,
 				53E262DB24C4CD35008DAB35 /* Interactor */,
@@ -139,6 +142,14 @@
 				53E262E924C4CE47008DAB35 /* NetworkService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		53E262F124C4E1AF008DAB35 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				53E262F224C4E1C5008DAB35 /* SearchAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E262E324C4CD99008DAB35 /* SearchInteractor.swift in Sources */,
+				53E262F324C4E1C5008DAB35 /* SearchAssembly.swift in Sources */,
 				53E262DF24C4CD76008DAB35 /* SearchEntity.swift in Sources */,
 				53E262E724C4CDBE008DAB35 /* SearchViewController.swift in Sources */,
 				53E262E124C4CD8A008DAB35 /* SearchRouter.swift in Sources */,

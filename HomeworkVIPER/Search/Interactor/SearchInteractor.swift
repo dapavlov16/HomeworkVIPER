@@ -21,7 +21,13 @@ final class SearchInteractor {
     // MARK: Properties
     
     weak var presenter: SearchInteractorOutput?
-    private var networkService = NetworkService()
+    private let networkService: NetworkService
+    
+    // MARK: Init
+    
+    init(networkService: NetworkService) {
+        self.networkService = networkService
+    }
     
     // MARK: Private
     

@@ -9,17 +9,26 @@
 import UIKit
 
 protocol SearchRouterInput {
-    func showMovieDetails(movie: SearchEntity, from view: UIViewController)
+    func showMovieDetails(movie: SearchEntity)
 }
 
 final class SearchRouter {
     
+    // MARK: Properties
+    
+    unowned let view: UIViewController
+    
+    // MARK: Init
+    
+    init(view: UIViewController) {
+        self.view = view
+    }
 }
 
 // MARK: SearchRouterInput
 extension SearchRouter: SearchRouterInput {
     
-    func showMovieDetails(movie: SearchEntity, from view: UIViewController) {
+    func showMovieDetails(movie: SearchEntity) {
         // navigation stub
     }
 }

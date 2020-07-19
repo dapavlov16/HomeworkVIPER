@@ -20,8 +20,8 @@ final class SearchPresenter {
 // MARK: SearchViewOutput
 extension SearchPresenter: SearchViewOutput {
     
-    func showMovieDetails(movie: SearchEntity, from view: UIViewController) {
-        router?.showMovieDetails(movie: movie, from: view)
+    func showMovieDetails(movie: SearchEntity) {
+        router?.showMovieDetails(movie: movie)
     }
     
     
